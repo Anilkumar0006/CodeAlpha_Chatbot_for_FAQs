@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Simple & Clean Styling for College FAQ Chatbot (Student Project)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* Chat Container Card */
+.chat-container {
+  width: 100%;
+  max-width: 700px;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  background-color: #1e40af;
+  color: #ffffff;
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.chat-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.chat-header p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+/* Suggested Questions Bar */
+.suggestions-bar {
+  background-color: #f8fafc;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.suggestions-bar span {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.suggestion-btn {
+  background-color: #e2e8f0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #1e293b;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.suggestion-btn:hover {
+  background-color: #cbd5e1;
+  color: #0f172a;
+}
+
+/* Chat Window */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f8fafc;
+}
+
+/* Message Rows */
+.message {
+  display: flex;
+  width: 100%;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.bot-message {
+  justify-content: flex-start;
+}
+
+/* Message Bubbles */
+.bubble {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  word-wrap: break-word;
+}
+
+.user-message .bubble {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-bottom-right-radius: 2px;
+}
+
+.bot-message .bubble {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Input Area */
+.chat-input-area {
+  display: flex;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  gap: 10px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.chat-input-area input:focus {
+  border-color: #2563eb;
+}
+
+.chat-input-area button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 0 22px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-input-area button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+  .chat-container {
+    height: 98vh;
+    border-radius: 8px;
+  }
+  .bubble {
+    max-width: 90%;
+  }
+}

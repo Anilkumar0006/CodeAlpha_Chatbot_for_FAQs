@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College FAQ Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="chat-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <div class="header-info">
+        <h2>🎓 College FAQ Chatbot</h2>
+        <p>Ask anything about admissions, courses, fees, exams, attendance & placements</p>
+      </div>
+    </div>
+
+    <!-- Suggested Sample Questions -->
+    <div class="suggestions-bar">
+      <span>Try asking:</span>
+      <button class="suggestion-btn">What is the admission procedure?</button>
+      <button class="suggestion-btn">What is the fee for B.Tech?</button>
+      <button class="suggestion-btn">What is the minimum attendance?</button>
+      <button class="suggestion-btn">Which companies visit for placements?</button>
+    </div>
+
+    <!-- Chat Messages Window -->
+    <div class="chat-box" id="chat-box">
+      <!-- Default welcome message -->
+      <div class="message bot-message">
+        <div class="bubble">
+          Hello! I am your College FAQ Assistant. How can I help you today? Feel free to ask any question regarding admissions, eligibility, courses, fees, exams, or placements.
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Input Form -->
+    <form class="chat-input-area" id="chat-form">
+      <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Type your college question here..." 
+        autocomplete="off" 
+        required
+      >
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # College FAQ Chatbot Using Natural Language Processing (NLP)
 
-**Task 2 — B.Tech CSE College Assignment Project**
+**Task 2 **
 
 A simple, clear, and beginner-friendly web-based chatbot built with Python, Flask, NLTK, Scikit-learn, HTML, CSS, and JavaScript. The chatbot answers frequently asked questions (FAQs) about college admissions, courses, fees, examinations, attendance, and campus placements using basic NLP techniques.
 
